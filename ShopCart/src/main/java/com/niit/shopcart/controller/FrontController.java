@@ -10,5 +10,15 @@ public class FrontController {
 		return "index";
 		
 	}
+	@RequestMapping("/signin")
+	public String showSignin(){
+		
+		return "signin";
+	}
+	@RequestMapping("/contact")
+	public String showContact(){
+		
+		return "contact";
+	}
 
 }

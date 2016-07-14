@@ -1,8 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@page isELIgnored="false"%>
 <html>
 <head>
+
+<c:url value="/resources/pics" var="z"></c:url>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -24,8 +29,20 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">FOODCHOW</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="about" target="_self">About</a></li>
+				<li><a href="contact" target="_self">Contact Us</a></li> 
+    </ul>
+   
+   
+   
+   
+   
+   
+   
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="NewFile.jsp">login</a></li>
+      <li><a href="signin">Sign In</a></li>
       <li><a href="signup.jsp">sign up</a></li> 
       
     </ul>
@@ -56,19 +73,18 @@
   
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="7.jpg" class="img-rounded"  width="1204" height="404"alt="food">
+      <img src="${z}/1.jpg" class="img-rounded"  width="1204" height="404"alt="food">
     </div>
 
     <div class="item">
-      <img src="8.jpg" class="img-rounded"  width="1204" height="404" alt="food">
+      <img src="${z}/2.jpg" class="img-rounded"  width="1204" height="404" alt="food">
     </div>
 
     <div class="item">
-      <img src="9.jpg" class="img-rounded"  width="1204" height="404"alt="food">
+      <img src="${z}/3.jpg" class="img-rounded"  width="1204" height="404"alt="food">
     </div>
 
     <div class="item">
-      <img src="10.jpg" class="img-rounded"  width="1204" height="404"alt="food">
     </div>
   </div>
 
