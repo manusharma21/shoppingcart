@@ -184,8 +184,8 @@ body {
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/ShopCart/"><font color="black"><strong>MyCorp
-						Inc.</strong></font></a>
+			<a class="navbar-brand" href="/ShopCart/"><font color="black"><strong>FOODCHOW
+						</strong></font></a>
 		</div>
 	</div>
 </nav>

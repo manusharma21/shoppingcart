@@ -45,5 +45,12 @@ public class SupplierController {
 		return "redirect:/supplier";
 	}
 	
-	
+	@RequestMapping("supplier/edit/{id}")
+	public String editSupplier(@PathVariable("id") String id, ModelMap model){
+		System.out.println("edit category");
+		
+		model.addAttribute("supplier", this.supplierImpl.get(id));
+		model.addAttribute("listSupplier", this.supplierImpl.list());
+		return "supplier";
+	}
 }
